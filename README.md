@@ -95,7 +95,7 @@ Everyone sees and updates the same board.
 Instance Variable
 Like a personal notebook
 Each person has their own copy.
-
+-----------------------------------------------------------------------------------------
 Day 7:
  Java Inheritance
 Mechanism where a child class acquires properties and methods of a parent class
