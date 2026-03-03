@@ -1,9 +1,10 @@
 package objectoriented;
 
 public class ObjectCounter {
-    static int count = 0;
+     static int count = 0;
 
     public ObjectCounter() {
+
         count++;
     }
 

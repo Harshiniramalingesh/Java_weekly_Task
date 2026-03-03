@@ -55,27 +55,6 @@ class Mage extends Character {
     }
 }
 
-class Rogue extends Character {
-
-    Rogue(String name) {
-        super(name, 80, 18);
-    }
-
-    void attack(Character opponent) {
-        int damage = strength + random.nextInt(6);
-        System.out.println(name + " strikes!");
-        opponent.takeDamage(damage);
-    }
-
-    void takeDamage(int damage) {
-        if (random.nextInt(100) < 30) {
-            System.out.println(name + " dodged!");
-        } else {
-            super.takeDamage(damage);
-        }
-    }
-}
-
 public class BattleArea {
     public static void main(String[] args) {
 

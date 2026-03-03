@@ -8,7 +8,7 @@ class Human{
         this.age = age;
         this.name = name;
         this.married = married;
-        this.population += 1;
+        Human.population += 1;
     }
 
 }

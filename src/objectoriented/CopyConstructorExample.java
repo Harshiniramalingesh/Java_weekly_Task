@@ -25,7 +25,7 @@ public class CopyConstructorExample {
         Employee e1 = new Employee("Sathiya","Developer");
         Employee e2 = new Employee(e1);
         e1.displayInfo();
-        e1.displayInfo();
+        e2.displayInfo();
     }
 
 }

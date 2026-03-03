@@ -4,7 +4,7 @@ interface ZeroParameter{
 }
 public class ZeroParamLamda {
     public static void main(String[] args){
-        ZeroParameter zeroParamLambdas = () -> System.out.println("This is a zero-parameter lambda expression!");
+        ZeroParameter zeroParamLambdas = () -> System.out.println("This is a zero-parameter lambda expression");
         zeroParamLambdas.display();
     }
 }

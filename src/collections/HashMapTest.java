@@ -23,7 +23,7 @@ public class HashMapTest {
         Person p2 = new Person(1, "B");
         map.put(p1, "Engineer");
         System.out.println("p1.equals(p2): " + p1.equals(p2));
-        System.out.println("Value using p2: " + map.get(p2));
+        System.out.println("Value using p2: " + map.get(p1));
         System.out.println("Map size: " + map.size());
     }
 }

@@ -32,14 +32,10 @@ class Order {
         return state;
     }
 }
-
-
-
 public class OrdersDemo {
     public static void main(String[] args) {
         Order order = new Order();
         System.out.println("Initial State: " + order.getState());
-
         order.nextState();
         order.nextState();
         order.nextState();

@@ -2,7 +2,7 @@ package filehandling;
 import java.io.*;
 import java.io.Serializable;
 class SerializationDeserialization implements Serializable{
-    transient String name = "User";
+    transient String name = null;
     transient int password = 1234;
     public static void main(String[] args) throws IOException,ClassNotFoundException{
            SerializationDeserialization ob = new SerializationDeserialization();

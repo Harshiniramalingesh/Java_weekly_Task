@@ -1,36 +1,30 @@
 package compositionoverinheritance;
 class Ram1 {
-    private int capacity1; // in GB
+    private int capacity1;
 
     public Ram1(int capacity1) {
         this.capacity1 = capacity1;
     }
-
     public int getCapacity1() {
         return capacity1;
     }
-
     public void showRam1() {
         System.out.println("RAM: " + capacity1 + "GB");
     }
 }
 class Computer1 {
-
     private Ram1 ram1;
 
     public Computer1(Ram1 ram1) {
         this.ram1 = ram1;
     }
-
     public void showSpecs1() {
         ram1.showRam1();
     }
-
-
     public void upgradeRam1(Ram1 newRam1) {
 
         if (newRam1.getCapacity1() > this.ram1.getCapacity1()) {
-            this.ram1 = newRam1;   // Replace old RAM
+            this.ram1 = newRam1;
             System.out.println("RAM upgraded successfully!");
         } else {
             System.out.println("Upgrade failed! New RAM must be higher.");

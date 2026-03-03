@@ -15,7 +15,7 @@ package compositionoverinheritance;
     }
 
     class Ram {
-        int capacity; // in GB
+        int capacity;
 
         Ram(int capacity) {
             this.capacity = capacity;
@@ -61,7 +61,6 @@ package compositionoverinheritance;
 
     public class PcBuilder {
         public static void main(String[] args) {
-
             Processor p = new Processor("Intel i5", 6);
             Ram r = new Ram(16);
             Storage s = new Storage(512, "SSD");

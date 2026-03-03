@@ -11,7 +11,6 @@ class Employee {
     public String getName() {
         return name;
     }
-
     public String getDepartment() {
         return department;
     }

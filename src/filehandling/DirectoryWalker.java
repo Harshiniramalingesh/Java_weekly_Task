@@ -1,36 +1,36 @@
 package filehandling;
 
-import java.io.IOException;
-import java.nio.file.*;
-import java.util.stream.Stream;
-
+import java.io.File;
 public class DirectoryWalker {
 
     public static void main(String[] args) {
-        Path startPath = Paths.get("C:\\Users\\kavyaramalingesh\\OneDrive\\Desktop\\Javaweek2\\src"); // change this
+        String folderPath = "C:\\Users\\kavyaramalingesh\\OneDrive\\Desktop\\Javaweek2\\src";
+          File folder = new File(folderPath);
 
-        try {
-            walkDirectory(startPath);
-        } catch (IOException e) {
-            System.out.println("Error: " + e.getMessage());
+        if (folder.exists() && folder.isDirectory()) {
+            listFiles(folder);
+        } else {
+            System.out.println("Invalid folder path.");
         }
     }
 
-    public static void walkDirectory(Path path) throws IOException {
+    public static void listFiles(File file) {
 
-        if (Files.isDirectory(path)) {
-            try (Stream<Path> paths = Files.list(path)) {
-                paths.forEach(p -> {
-                    try {
-                        walkDirectory(p);  // Recursive call
-                    } catch (IOException e) {
-                        System.out.println("Error reading: " + p);
-                    }
-                });
+
+        if (file.isFile()) {
+            System.out.println("File: " + file.getAbsolutePath());
+            System.out.println("Size: " + file.length() + " bytes");
+        }
+
+
+        else if (file.isDirectory()) {
+            File[] files = file.listFiles();
+
+            if (files != null) {
+                for (File f : files) {
+                    listFiles(f);
+                }
             }
-        } else {
-            long size = Files.size(path);
-            System.out.println("File: " + path.toAbsolutePath() + " | Size: " + size + " bytes");
         }
     }
 }

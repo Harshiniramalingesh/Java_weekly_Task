@@ -8,9 +8,7 @@ public class SingleTonDemo {
         System.out.println(obj1==obj2);
 }
     public static class AppConfig {
-        private AppConfig(){
 
-        }
         private static AppConfig instance;
 
         public static AppConfig getInstance(){

@@ -13,7 +13,7 @@ abstract class Order{
  abstract void processOrder();
 
     void generateInvoice() {
-        System.out.println("Invoice generated");
+        System.out.println("Bill generated");
     }
 }
 
@@ -30,7 +30,6 @@ class AmazonOrder extends Order{
 public class OrdersDemo {
     public static void main(String[] args){
         Order.showTotalOrders();
-
         Order o1 = new AmazonOrder();
         o1.processOrder();
         o1.generateInvoice();
@@ -39,7 +38,7 @@ public class OrdersDemo {
 
         Order o2 = new AmazonOrder();
         o2.processOrder();
-
+        o2.generateInvoice();
         Order.showTotalOrders();
     }
 }

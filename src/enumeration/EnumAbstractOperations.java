@@ -1,6 +1,5 @@
 package enumeration;
 enum Operation {
-
     ADD {
         @Override
         double apply(double x, double y) {

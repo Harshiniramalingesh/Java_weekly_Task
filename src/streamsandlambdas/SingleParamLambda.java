@@ -9,7 +9,7 @@ public class SingleParamLambda {
 
         System.out.println("All elements:");
         list.forEach(n -> System.out.println(n));
-
+//          list.forEach(System.out::println);
         System.out.println("Even elements:");
         list.forEach(n -> {
             if (n % 2 == 0)

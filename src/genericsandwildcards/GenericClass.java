@@ -1,7 +1,4 @@
 package genericsandwildcards;
-
-//    import com.sun.jdi.IntegerValue;
-
 class Box<T>{
     private T data;
 

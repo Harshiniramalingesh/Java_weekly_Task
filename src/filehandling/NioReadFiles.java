@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 import java.util.List;
 public class NioReadFiles {
     public static void main(String[] args){
-        Path filePath = Paths.get("example.txt");
+        Path filePath = Paths.get("example2.txt");
         try{
             List<String> lines = Files.readAllLines(filePath);
 

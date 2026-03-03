@@ -15,6 +15,7 @@ public class StaticToNonstatic {
         System.out.println("Hello world");
     }
 void fun2() {
-    System.out.println("It is double fun");
+
+        System.out.println("It is double fun");
 }
 }

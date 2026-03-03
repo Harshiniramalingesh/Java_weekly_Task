@@ -4,6 +4,7 @@ interface Drawable{
     default void msg(){
         System.out.println("default method");
     }
+
 }
 class Rectangle implements Drawable{
     public void draw(){

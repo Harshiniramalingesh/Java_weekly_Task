@@ -4,7 +4,7 @@ import java.io.File;
 
 public class GetFileInformation {
     public static void main(String[] args) {
-        File myObj = new File("Harshini_R.txt");
+        File myObj = new File("Harshini.txt");
         if (myObj.exists()) {
             System.out.println("File name: " + myObj.getName());
             System.out.println("Absolute path: " + myObj.getAbsolutePath());
